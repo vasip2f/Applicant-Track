@@ -95,7 +95,7 @@ const AddApplicant = () => {
       console.log(formData)
       // await axios.post("http://localhost:9005/applicant/add",formData)
 
-      await axios.post("https://ats-b.vercel.app/applicant/add", formData)
+      await axios.post("https://applicant-tracking-fe.onrender.com/applicant/add", formData)
         .then(res =>{
           dispatch(fetchApplicants())
           alert(`New Applicant Added Successfully`)

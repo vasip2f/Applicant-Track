@@ -16,7 +16,7 @@ const Login = ({ setIsLogin }) => {
         validateForm()
         const config = { headers: { "Content-Type": "Application/json" } }
         if (validateForm() === true) {
-            await axios.post(`https://ats-b.vercel.app/admin/login/${formData.email}`, formData, config)
+            await axios.post(`https://applicant-tracking-fe.onrender.com/admin/login/${formData.email}`, formData, config)
                 .then((res) => {
                     localStorage.setItem("AdminInfo", JSON.stringify(res.data))
                     toast.success(`Welcome to ${res.data.name}`)

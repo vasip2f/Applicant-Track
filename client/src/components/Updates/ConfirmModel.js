@@ -10,7 +10,7 @@ function ConfirmModel({ _id, commentId, commentOne }) {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     const handleEdit = async () => {
-        await axios.patch("https://ats-b.vercel.app/comment", {
+        await axios.patch("https://applicant-tracking-fe.onrender.com/comment", {
             id: _id,
             commentId: commentId,
             comment: commentP

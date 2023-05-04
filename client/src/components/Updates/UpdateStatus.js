@@ -24,7 +24,7 @@ const UpdateStatus = ({applicantdetails}) => {
         validForm()
         if (validForm() === true) {
             const config = { headers: { "Content-Type": "Application/json" } }
-            await axios.put("https://ats-b.vercel.app/appicant/update/comments", postData, config)
+            await axios.put("https://applicant-tracking-fe.onrender.com/appicant/update/comments", postData, config)
                 .then((res) => {
                     toast.success("status updated successfully")
                     dispatch(fetchApplicants())

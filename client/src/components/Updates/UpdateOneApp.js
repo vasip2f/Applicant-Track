@@ -14,7 +14,7 @@ const UpdateOneApp = () => {
             setEmailErr("Please enter email of the applicant.")
         } else {
             try {
-                const data = await axios.get(`https://ats-b.vercel.app/singleApplicant/${email}`).then(res => res.data)
+                const data = await axios.get(`https://applicant-tracking-fe.onrender.com/singleApplicant/${email}`).then(res => res.data)
                 setData(data)
                 setEmailErr(null)
                 console.log(data)
